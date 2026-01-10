@@ -14,28 +14,44 @@
     }
 
     body {
-      background: #000;
       color: #fff;
+      background: #000;
     }
 
-    /* BANNER APENAS VISUAL */
+    /* BANNER */
     .hero {
-      height: 100vh;
-      background:
-        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+      min-height: 100vh;
+      background: 
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
         url('fundo.png') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: auto;
     }
 
     /* FORMULÁRIO */
     .form-section {
       background: #111;
-      padding: 70px 20px;
+      padding: 60px 20px;
     }
 
     .form-section h2 {
       text-align: center;
       margin-bottom: 40px;
-      font-size: 2.3rem;
+      font-size: 2.2rem;
     }
 
     form {
@@ -82,14 +98,22 @@
 <body>
 
   <!-- BANNER -->
-  <section class="hero"></section>
+  <section class="hero">
+    <div>
+      <h1>Imersão China 360</h1>
+      <p>
+        Descubra a China por trás da Canton Fair com uma experiência estratégica,
+        prática e exclusiva para empresários.
+      </p>
+    </div>
+  </section>
 
-  <!-- GARANTA SUA VAGA -->
+  <!-- FORMULÁRIO -->
   <section class="form-section">
     <h2>Garanta sua vaga</h2>
 
     <form 
-      action="https://formsubmit.co/imersaochina360@outlook.com"
+      action="https://formsubmit.co/SEUEMAIL@DOMINIO.COM" 
       method="POST"
     >
       <input type="hidden" name="_captcha" value="false">
@@ -124,9 +148,9 @@
       </select>
 
       <label>Conte sobre o que busca</label>
-      <textarea
-        name="Objetivo"
-        rows="4"
+      <textarea 
+        name="Objetivo" 
+        rows="4" 
         placeholder="Explique brevemente seus objetivos com a Imersão China 360">
       </textarea>
 
